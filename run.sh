@@ -16,7 +16,7 @@ gcc sample.cpp -L${OUTPUT} -ldevicesdk -lrt -o sample
 
 
 if [ ! -x "/dev/ttyUSB0" ]; then
-	sudo chmod 777 /dev/ttyUSB0
+	chmod 777 /dev/ttyUSB0
 fi
 
 export LD_LIBRARY_PATH=${OUTPUT}/:${LD_LIBRARY_PATH}
